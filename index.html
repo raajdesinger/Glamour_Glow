@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="bn" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Glamour & Glow Salon | Best Ladies Beauty Parlour in Kolkata</title>
+  <meta name="description" content="Glamour & Glow - Kolkata-র সেরা বিউটি পার্লার ও সেলুন। Bridal Makeup, Hair Spa, Facial এবং অন্যান্য বিউটি সার্ভিসের জন্য আজই অনলাইনে বুকিং করুন।">
+  <meta name="keywords" content="Best Salon in Kolkata, Ladies Beauty Parlour near me, Bridal Makeup Kolkata, Hair Cut, Facial">
+  <meta name="author" content="Glamour & Glow Salon">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Glamour & Glow Salon | Luxury Beauty & Hair Care">
+  <meta property="og:description" content="Kolkata-র প্রিমিয়াম সেলুন সার্ভিস। আজই বুক করুন আপনার অ্যাপয়েন্টমেন্ট!">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1200&q=80">
+  <meta property="og:type" content="website">
+
+  <!-- Schema.org Local Business Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BeautySalon",
+    "name": "Glamour & Glow Salon",
+    "image": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80",
+    "telephone": "+918640877364",
+    "email": "info@glamourglowsalon.com",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Park Street",
+      "addressLocality": "Kolkata",
+      "addressRegion": "WB",
+      "postalCode": "700016",
+      "addressCountry": "IN"
+    },
+    "openingHours": "Mo-Su 10:00-20:00",
+    "priceRange": "₹₹"
+  }
+  </script>
+
+  <!-- Bootstrap 5.3 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="bg-dark text-light py-2 px-3 d-none d-md-block">
+    <div class="container d-flex justify-content-between align-items-center fs-7">
+      <div>
+        <i class="bi bi-clock me-2 text-warning"></i> Mon - Sun: 10:00 AM - 08:00 PM
+        <span class="mx-3">|</span>
+        <i class="bi bi-geo-alt me-2 text-warning"></i> Park Street, Kolkata, West Bengal
+      </div>
+      <div>
+        <a href="tel:+918640877364" class="text-light text-decoration-none me-3"><i class="bi bi-telephone-fill me-1"></i> +91 86408 77364</a>
+        <a href="https://wa.me/918640877364" class="text-light text-decoration-none"><i class="bi bi-whatsapp me-1 text-success"></i> WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-3" href="#">
+        <i class="bi bi-scissors text-danger"></i> Glamour & Glow
+      </a>
+      
+      <div class="d-flex align-items-center d-lg-none ms-auto me-2">
+        <!-- Mobile Dark Mode Toggle -->
+        <button class="btn btn-outline-secondary rounded-circle btn-sm me-2" id="themeToggleMobile" type="button">
+          <i class="bi bi-moon-stars-fill"></i>
+        </button>
+      </div>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#packages">Packages</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="#team">Our Team</a></li>
+          <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+          <li class="nav-item ms-lg-2 my-2 my-lg-0">
+            <a href="#booking" class="btn btn-gold px-3 rounded-pill"><i class="bi bi-calendar-check me-1"></i> Book Appointment</a>
+          </li>
+          <!-- Desktop Dark Mode Toggle -->
+          <li class="nav-item ms-lg-2 d-none d-lg-block">
+            <button class="btn btn-outline-secondary rounded-circle" id="themeToggleDesktop" type="button" title="Toggle Light/Dark Theme">
+              <i class="bi bi-moon-stars-fill" id="themeIcon"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Banner 1 Images -->
+  <!-- <section id="home" class="hero-section text-center">
+    <div class="container py-5">
+      <span class="text-uppercase tracking-wide text-warning fw-semibold">Premier Beauty & Hair Salon</span>
+      <h1 class="display-3 fw-bold my-3">আপনার রূপ ও সৌন্দর্যের সেরা যত্ন</h1>
+      <p class="lead mb-4 mx-auto" style="max-width: 700px;">অভিজ্ঞ স্টাইলিস্টদের হাতে পান আধুনিক হেয়ার স্টাইল, ব্রাইডাল মেকআপ এবং রিল্যাক্সিং স্পা ট্রিটমেন্ট।</p>
+      <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <a href="#booking" class="btn btn-gold btn-lg px-4 rounded-pill"><i class="bi bi-calendar-event me-2"></i>Book Appointment</a>
+        <a href="tel:+918640877364" class="btn btn-outline-light btn-lg px-4 rounded-pill"><i class="bi bi-telephone me-2"></i>Call Now</a>
+        <a href="https://wa.me/918640877364" class="btn btn-success btn-lg px-4 rounded-pill"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+      </div>
+    </div>
+  </section> -->
+
+
+<!-- Hero Banner Video -->
+ 
+
+<!-- Hero Banner Image Slider -->
+
+<section id="home" class="p-0 position-relative">
+  <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="4000">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+      <div class="carousel-item active" style="min-height: 85vh; background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="container h-100 d-flex align-items-center justify-content-center text-center text-white" style="padding-top: 120px; padding-bottom: 100px;">
+          <div>
+            <span class="text-uppercase tracking-wide text-warning fw-semibold">Premier Beauty & Hair Salon</span>
+            <h1 class="display-3 fw-bold my-3">The Best Care for Your Beauty and Elegance</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px;">Get modern hair styling, bridal makeup, and relaxing spa treatments from experienced stylists</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#booking" class="btn btn-gold btn-lg px-4 rounded-pill"><i class="bi bi-calendar-event me-2"></i>Book Appointment</a>
+              <a href="tel:+919876543210" class="btn btn-outline-light btn-lg px-4 rounded-pill"><i class="bi bi-telephone me-2"></i>Call Now</a>
+              <a href="https://wa.me/918640877364" class="btn btn-success btn-lg px-4 rounded-pill"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+   
+      <div class="carousel-item" style="min-height: 85vh; background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="container h-100 d-flex align-items-center justify-content-center text-center text-white" style="padding-top: 120px; padding-bottom: 100px;">
+          <div>
+            <span class="text-uppercase tracking-wide text-warning fw-semibold">Bridal Makeup Special</span>
+            <h1 class="display-3 fw-bold my-3">স্মরণীয় করে তুলুন আপনার বিশেষ দিনটি</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px;">আমাদের HD ও Airbrush ব্রাইডাল মেকআপ আপনার বিশেষ রূপকে করবে আরও আকর্ষণীয় ও দৃষ্টিনন্দন।</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#packages" class="btn btn-gold btn-lg px-4 rounded-pill"><i class="bi bi-gift me-2"></i>View Packages</a>
+              <a href="https://wa.me/918640877364" class="btn btn-success btn-lg px-4 rounded-pill"><i class="bi bi-whatsapp me-2"></i>WhatsApp Enquiry</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="carousel-item" style="min-height: 85vh; background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;">
+        <div class="container h-100 d-flex align-items-center justify-content-center text-center text-white" style="padding-top: 120px; padding-bottom: 100px;">
+          <div>
+            <span class="text-uppercase tracking-wide text-warning fw-semibold">Luxury Skin & Hair Care</span>
+            <h1 class="display-3 fw-bold my-3">পেশাদার হেয়ার স্পা ও ফেসিয়াল ট্রিটমেন্ট</h1>
+            <p class="lead mb-4 mx-auto" style="max-width: 700px;">Gift yourself a relaxing experience with international quality products and 100% hygiene protection.</p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+              <a href="#services" class="btn btn-gold btn-lg px-4 rounded-pill"><i class="bi bi-scissors me-2"></i>Explore Services</a>
+              <a href="#booking" class="btn btn-outline-light btn-lg px-4 rounded-pill"><i class="bi bi-calendar-check me-2"></i>Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+
+  </div>
+</section>
+
+
+
+  <!-- About Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&w=800&q=80" alt="Salon Interior" class="img-fluid rounded-4 shadow">
+        </div>
+        <div class="col-lg-6">
+          <span class="text-danger fw-semibold text-uppercase">Welcome to Glamour & Glow</span>
+          <h2 class="display-6 fw-bold my-2">Why Are We One of the Best Salons in Kolkata?</h2>
+          <p class="text-body-secondary">We have been providing world-class beauty services for the past 10 years. We use international standard cosmetics and have an experienced professional team. We are committed to making your special day even more beautiful.</p>
+          <div class="row g-3 mt-2">
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>100% Hygiene & Safety</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>Premium Products</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>Experienced Beauticians</span>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="d-flex align-items-center">
+                <i class="bi bi-check-circle-fill text-success fs-4 me-2"></i>
+                <span>Affordable Packages</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Page / Section -->
+  <section id="services" class="py-5 bg-custom-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Our Popular Services</h2>
+        <p class="text-body-secondary">Choose the best beauty care service according to your needs</p>
+      </div>
+
+      <!-- Nav Tabs for Categories -->
+      <ul class="nav nav-pills justify-content-center mb-4" id="serviceTab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="hair-tab" data-bs-toggle="tab" data-bs-target="#hair" type="button">Hair Care</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="beauty-tab" data-bs-toggle="tab" data-bs-target="#beauty" type="button">Beauty & Skin</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="bridal-tab" data-bs-toggle="tab" data-bs-target="#bridal" type="button">Bridal Special</button>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="serviceTabContent">
+        <!-- Hair Services -->
+        <div class="tab-pane fade show active" id="hair">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Hair Cut">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Trendy Hair Cut & Styling</h5>
+                  <p class="card-text text-body-secondary">আপনার ফেস কাট অনুযায়ী আধুনিক হেয়ার কাট ও ব্লো ড্রাই।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹৪৯৯</span>
+                    <span class="badge bg-secondary">৪৫ মিনিট</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Hair Spa">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">L'Oreal Hair Spa</h5>
+                  <p class="card-text text-body-secondary">চুলের গভীরে পুষ্টি জোগাতে এবং চুল পড়া কমাতে বিশেষ স্পা।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹৯৯৯</span>
+                    <span class="badge bg-secondary">৬০ মিনিট</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Hair Straightening">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Hair Straightening & Smoothing</h5>
+                  <p class="card-text text-body-secondary">পেশাদার উপায়ে সিল্কি ও মসৃণ চুল পেতে বিশেষ ট্রিটমেন্ট।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹৩,৯৯৯</span>
+                    <span class="badge bg-secondary">৩ ঘণ্টা</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Beauty Services -->
+        <div class="tab-pane fade" id="beauty">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Facial">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Diamond Glow Facial</h5>
+                  <p class="card-text text-body-secondary">ত্বকের উজ্জ্বলতা বাড়াতে ও মৃত কোষ দূর করতে কার্যকরী ফেসিয়াল।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹১,৪৯৯</span>
+                    <span class="badge bg-secondary">৬০ মিনিট</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Pedicure">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Luxury Pedicure & Manicure</h5>
+                  <p class="card-text text-body-secondary">হাত ও পায়ের নিখুঁত যত্ন ও রিল্যাক্সিং মাসাজ।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹১,১৯৯</span>
+                    <span class="badge bg-secondary">৫০ মিনিট</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bridal Services -->
+        <div class="tab-pane fade" id="bridal">
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="card h-100 shadow-sm border-0">
+                <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" class="card-img-top card-img-top-service" alt="Bridal Makeup">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">HD Bridal Makeup</h5>
+                  <p class="card-text text-body-secondary">বিয়ের বিশেষ দিনের জন্য প্রিমিয়াম এইচডি মেকআপ ও ড্র্যাপিং।</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <span class="fw-bold text-danger fs-5">₹১২,০০০</span>
+                    <span class="badge bg-secondary">৪ ঘণ্টা</span>
+                  </div>
+                </div>
+                <div class="card-footer bg-transparent border-0 pb-3">
+                  <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Now</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Packages -->
+  <section id="packages" class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Special Offers & Packages</h2>
+        <p class="text-body-secondary">Get attractive discounts on multiple services together</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-primary shadow-sm text-center p-3">
+            <div class="card-body">
+              <h4 class="fw-bold">Basic Glow Package</h4>
+              <h2 class="text-danger my-3">₹ 1,119 <span class="fs-6 text-muted"><del>₹2,2০০</del></span></h2>
+              <ul class="list-unstyled my-4 text-start">
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Hair Cut & Blow Dry</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Herbal Glow Facial</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Eyebrow Threading</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Upper Lip Threading</li>
+              </ul>
+              <a href="#booking" class="btn btn-outline-primary w-100 rounded-pill">Book Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-warning shadow text-center p-3 position-relative">
+            <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-warning text-dark px-3 py-2">Most Popular</span>
+            <div class="card-body">
+              <h4 class="fw-bold">Pre-Bridal Glow</h4>
+              <h2 class="text-danger my-3">₹4,999 <span class="fs-6 text-muted"><del>₹8,999</del></span></h2>
+              <ul class="list-unstyled my-4 text-start">
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Gold Radiance Facial</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Full Body Waxing</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> L'Oreal Hair Spa</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Deluxe Pedicure & Manicure</li>
+              </ul>
+              <a href="#booking" class="btn btn-gold w-100 rounded-pill">Book Package</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="card h-100 border-danger shadow-sm text-center p-3">
+            <div class="card-body">
+              <h4 class="fw-bold">Luxury Bridal Combo</h4>
+              <h2 class="text-danger my-3">₹15,555 <span class="fs-6 text-muted"><del>₹20,000</del></span></h2>
+              <ul class="list-unstyled my-4 text-start">
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> HD Bridal Makeup</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Advanced Hair Styling</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Saree & Jewelry Draping</li>
+                <li class="mb-2"><i class="bi bi-check2 text-success me-2"></i> Free Trial Session</li>
+              </ul>
+              <a href="#booking" class="btn btn-outline-danger w-100 rounded-pill">Book Package</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Online Appointment Booking Form -->
+  <section id="booking" class="py-5 bg-custom-light">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card shadow-lg border-0 rounded-4">
+            <div class="card-body p-4 p-md-5">
+              <h2 class="text-center fw-bold mb-2">Online Appointment Booking</h2>
+              <p class="text-center text-body-secondary mb-4">সহজেই আপনার পছন্দের দিন ও সময় বুক করুন</p>
+              
+              <div id="bookingAlert" class="alert alert-success d-none" role="alert">
+                <i class="bi bi-check-circle-fill me-2"></i> Your Appointment has been successfully booked!
+              </div>
+
+              <form id="appointmentForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label class="form-label">Your Name *</label>
+                    <input type="text" id="custName" class="form-control" placeholder="আপনার পুরো নাম লিখুন" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Mobile No *</label>
+                    <input type="tel" id="custPhone" class="form-control" placeholder="১০ ডিজিট মোবাইল নম্বর" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Email Id </label>
+                    <input type="email" id="custEmail" class="form-control" placeholder="name@example.com">
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Select Services *</label>
+                    <select id="custService" class="form-select" required>
+                      <option value="" selected disabled>~ Select ~</option>
+                      <option value="Hair Cut">Hair Cut & Styling</option>
+                      <option value="Hair Spa">Hair Spa</option>
+                      <option value="Facial">Diamond Facial</option>
+                      <option value="Bridal Makeup">Bridal Makeup</option>
+                      <option value="Pedicure & Manicure">Pedicure & Manicure</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Specialist</label>
+                    <select id="custStaff" class="form-select">
+                      <option value="Any Available">যেকোনো উপলব্ধ স্টাফ</option>
+                      <option value="Priya Sharma">Priya Sharma (Senior Hair Stylist)</option>
+                      <option value="Ananya Roy">Ananya Roy (Bridal Specialist)</option>
+                      <option value="Riya Das">Riya Das (Skin Specialist)</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Date *</label>
+                    <input type="date" id="custDate" class="form-control" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Time *</label>
+                    <select id="custTime" class="form-select" required>
+                      <option value="" selected disabled>সময় বেছে নিন</option>
+                      <option value="10:00 AM">১০:০০ AM</option>
+                      <option value="12:00 PM">১২:০০ PM</option>
+                      <option value="02:00 PM">০২:০০ PM</option>
+                      <option value="04:00 PM">০৪:০০ PM</option>
+                      <option value="06:00 PM">০৬:০০ PM</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <label class="form-label">Persons number</label>
+                    <input type="number" id="custPersons" class="form-control" value="1" min="1" max="5">
+                  </div>
+                  <div class="col-12">
+                    <label class="form-label">Note / SMS</label>
+                    <textarea id="custNote" class="form-control" rows="3" placeholder="বিশেষ কোনো চাওয়া থাকলে লিখুন..."></textarea>
+                  </div>
+                  <div class="col-12 text-center mt-4">
+                    <button type="submit" class="btn btn-gold btn-lg px-5 rounded-pill"><i class="bi bi-send me-2"></i>Confirm Booking</button>
+                  </div>
+                </div>
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery" class="py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="fw-bold">Our Gallery</h2>
+        <p class="text-body-secondary">আমাদের কাজ ও ইনটেরিয়রের কিছু মুহূর্ত</p>
+        
+        <!-- Category Filter Buttons -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mt-3">
+          <button class="btn btn-outline-dark filter-btn active" onclick="filterGallery('all')">All</button>
+          <button class="btn btn-outline-dark filter-btn" onclick="filterGallery('hair')">Hair</button>
+          <button class="btn btn-outline-dark filter-btn" onclick="filterGallery('makeup')">Makeup</button>
+          <button class="btn btn-outline-dark filter-btn" onclick="filterGallery('bridal')">Bridal</button>
+          <button class="btn btn-outline-dark filter-btn" onclick="filterGallery('salon')">Salon Interior</button>
+        </div>
+      </div>
+
+      <div class="row g-3" id="galleryContainer">
+        <div class="col-md-4 col-6 gallery-item hair">
+          <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Hair Style">
+        </div>
+        <div class="col-md-4 col-6 gallery-item makeup">
+          <img src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Makeup">
+        </div>
+        <div class="col-md-4 col-6 gallery-item bridal">
+          <img src="https://images.unsplash.com/photo-1595959183082-7b570b7e08e2?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Bridal">
+        </div>
+        <div class="col-md-4 col-6 gallery-item salon">
+          <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Salon Interior">
+        </div>
+        <div class="col-md-4 col-6 gallery-item hair">
+          <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Hair Treatment">
+        </div>
+        <div class="col-md-4 col-6 gallery-item bridal">
+          <img src="https://images.unsplash.com/photo-1583001809873-a1284a5da527?auto=format&fit=crop&w=600&q=80" class="w-100 gallery-img" alt="Bridal Look">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team / Beauticians -->
+  <section id="team" class="py-5 bg-custom-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">আমাদের বিশেষজ্ঞ টিম</h2>
+        <p class="text-body-secondary">অভিজ্ঞ পেশাদার বিউটিশিয়ানদের সাথে সাক্ষাৎ করুন</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-3">
+            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80" class="rounded-circle mx-auto my-3" style="width: 130px; height: 130px; object-fit: cover;" alt="Staff">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Priya Sharma</h5>
+              <p class="text-danger mb-2">Senior Hair Stylist</p>
+              <p class="small text-body-secondary">৮ বছরের কাজের অভিজ্ঞতা। বিশেষ দক্ষ: Hair Colour & Hair Straightening.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-3">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80" class="rounded-circle mx-auto my-3" style="width: 130px; height: 130px; object-fit: cover;" alt="Staff">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Ananya Roy</h5>
+              <p class="text-danger mb-2">Bridal Makeup Artist</p>
+              <p class="small text-body-secondary">৬ বছরের অভিজ্ঞতা। বিশেষ দক্ষ: HD Bridal Makeup & Saree Draping.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm text-center p-3">
+            <img src="https://images.unsplash.com/photo-1567532939604-b6b5b0db2604?auto=format&fit=crop&w=400&q=80" class="rounded-circle mx-auto my-3" style="width: 130px; height: 130px; object-fit: cover;" alt="Staff">
+            <div class="card-body">
+              <h5 class="fw-bold mb-1">Riya Das</h5>
+              <p class="text-danger mb-2">Skin Care Specialist</p>
+              <p class="small text-body-secondary">৫ বছরের অভিজ্ঞতা। বিশেষ দক্ষ: Advanced Facial & Skin Treatments.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews / Testimonials -->
+  <section class="py-5">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Customer Feedback</h2>
+        <p class="text-body-secondary">আমাদের সন্তুষ্ট গ্রাহকরা যা বলছেন</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text">"Priya-দি দারুণ ভাবে আমার হেয়ার কাট করেছেন! স্টাফদের ব্যবহার অত্যন্ত ভালো এবং সেলুন খুব পরিষ্কার।"</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" style="width: 45px; height: 45px; object-fit: cover;" alt="Customer">
+                <div>
+                  <h6 class="mb-0 fw-bold">Sreyashi Mukherjee</h6>
+                  <small class="text-body-secondary">Hair Cut & Spa</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text">"আমার বিয়ের জন্য Ananya-র Bridal Makeup দারুণ প্রশংসা পেয়েছে। HD Makeup একদম প্রাকৃতিক দেখাচ্ছিল।"</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" style="width: 45px; height: 45px; object-fit: cover;" alt="Customer">
+                <div>
+                  <h6 class="mb-0 fw-bold">Pooja Banerjee</h6>
+                  <small class="text-body-secondary">Bridal Makeup</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm p-3">
+            <div class="card-body">
+              <div class="text-warning mb-2">
+                <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+              </div>
+              <p class="card-text">"Diamond Facial নেয়ার পর ত্বক একদম উজ্জ্বল হয়ে গেছে। খুব রিল্যাক্সিং অভিজ্ঞতা ছিল।"</p>
+              <div class="d-flex align-items-center mt-3">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=100&q=80" class="rounded-circle me-3" style="width: 45px; height: 45px; object-fit: cover;" alt="Customer">
+                <div>
+                  <h6 class="mb-0 fw-bold">Sneha Sarkar</h6>
+                  <small class="text-body-secondary">Facial Service</small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Special Offers Banner -->
+  <section id="offers" class="py-5 bg-warning text-dark">
+    <div class="container text-center">
+      <h2 class="fw-bold mb-2"><i class="bi bi-gift-fill me-2"></i>উৎসবের বিশেষ ডিসকাউন্ট!</h2>
+      <p class="fs-5 mb-4">যেকোনো ব্রাইডাল প্যাকেজ বুকিং-এ পান <strong>20% FLAT OFF</strong>। আজই বুকিং নিশ্চিত করুন!</p>
+      <a href="#booking" class="btn btn-dark btn-lg rounded-pill px-4">অফার দাবি করুন</a>
+    </div>
+  </section>
+
+  <!-- Contact Us & Location -->
+  <section id="contact" class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h2 class="fw-bold mb-4">আমাদের সাথে যোগাযোগ করুন</h2>
+          <div class="d-flex mb-3">
+            <i class="bi bi-geo-alt-fill text-danger fs-4 me-3"></i>
+            <div>
+              <h6 class="fw-bold mb-1">ঠিকানা:</h6>
+              <p class="text-body-secondary mb-0">12/A, Park Street, Near Metro Station, Kolkata, West Bengal - 700016</p>
+            </div>
+          </div>
+          <div class="d-flex mb-3">
+            <i class="bi bi-telephone-fill text-danger fs-4 me-3"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Mobile No:</h6>
+              <p class="text-body-secondary mb-0">+91 86408 77364</p>
+            </div>
+          </div>
+          <div class="d-flex mb-3">
+            <i class="bi bi-envelope-fill text-danger fs-4 me-3"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Email:</h6>
+              <p class="text-body-secondary mb-0">info@glamourglowsalon.com</p>
+            </div>
+          </div>
+          <div class="d-flex mb-4">
+            <i class="bi bi-clock-fill text-danger fs-4 me-3"></i>
+            <div>
+              <h6 class="fw-bold mb-1">Opening Hours:</h6>
+              <p class="text-body-secondary mb-0">Mon - Sun: 10:00 AM - 08:00 PM</p>
+            </div>
+          </div>
+          <a href="https://maps.google.com" target="_blank" class="btn btn-outline-danger rounded-pill"><i class="bi bi-map me-2"></i>Get Directions</a>
+        </div>
+        <div class="col-lg-7">
+          <!-- Google Map Embed -->
+          <div class="ratio ratio-16x9 rounded-4 shadow-sm overflow-hidden">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14739.387920364993!2d88.3476023!3d22.5539895!2m3!1f0!0f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027713437f818b%3A0x868cb678881d77d7!2sPark%20St%2C%20Kolkata%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light pt-5 pb-3">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <div class="col-lg-4 col-md-6">
+          <h4 class="fw-bold text-warning mb-3">Glamour & Glow</h4>
+          <p class="text-secondary">We are always ready to take proper care of your beauty. Here you will get world-class services at affordable prices</p>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-youtube"></i></a>
+            <a href="#" class="text-light"><i class="bi bi-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled text-secondary">
+            <li><a href="#home" class="text-decoration-none text-secondary">Home</a></li>
+            <li><a href="#services" class="text-decoration-none text-secondary">Services</a></li>
+            <li><a href="#packages" class="text-decoration-none text-secondary">Packages</a></li>
+            <li><a href="#gallery" class="text-decoration-none text-secondary">Gallery</a></li>
+            <li><a href="#booking" class="text-decoration-none text-secondary">Booking</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Popular Services</h5>
+          <ul class="list-unstyled text-secondary">
+            <li>HD Bridal Makeup</li>
+            <li>L'Oreal Hair Spa</li>
+            <li>Diamond Facial</li>
+            <li>Hair Straightening</li>
+            <li>Pedicure & Manicure</li>
+          </ul>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <h5 class="fw-bold mb-3">Opening Hours</h5>
+          <p class="text-secondary mb-1">Mon - Sun: 10:00 AM - 08:00 PM</p>
+          <p class="text-secondary">All 7 Days Open</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center text-secondary small">
+        © 2026 Glamour & Glow Salon. All Rights Reserved. | Designed for ITS Kolkata.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/919876543210?text=Hello,%20I%20want%20to%20enquire%20about%20salon%20services." class="floating-whatsapp" target="_blank" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
+  </a>
+
+  <!-- Bootstrap 5.3 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="main.js"></script>
+  <!-- test commit -->
+</body>
+</html>
